@@ -6,7 +6,7 @@ let input = document.querySelector(".input");
 
 const renderWeather = function (data) {
   const html = `
-    <h2></h2>
+    <h2>${inputValue}</h2>
     <p>temperature: ${data.temperature}</p>
     <p>wind: ${data.wind}</p>
     <p>description:  ${data.description}</p>
