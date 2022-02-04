@@ -11,15 +11,15 @@ const renderWeather = function (data) {
     <p>wind: ${data.wind}</p>
     <p>description:  ${data.description}</p>
     <ul>
-        <li>1-kun:
+        <li>Erta:
           <p>temperature: ${data.forecast[0].temperature}</p>
           <p>wind: ${data.forecast[0].wind}</p>
           <p>description:  ${data.forecast[0].description}</p></li>
-        <li>2-kun:
+        <li>Indin:
           <p>temperature: ${data.forecast[1].temperature}</p>
           <p>wind: ${data.forecast[1].wind}</p>
           <p>description:  ${data.forecast[1].description}</p></li></li>
-        <li>3-kun:
+        <li>Va so'nggi kun:
           <p>temperature: ${data.forecast[2].temperature}</p>
           <p>wind: ${data.forecast[2].wind}</p>
           <p>description:  ${data.forecast[2].description}</p></li></li>
