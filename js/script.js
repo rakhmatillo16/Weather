@@ -55,4 +55,5 @@ const getRegion = async function (region) {
 wetherBtn.addEventListener("click", (evt) => {
   let inputValue = input.value;
   getRegion(inputValue);
+  wether.innerHTML = null;
 });
