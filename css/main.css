@@ -1,8 +1,12 @@
-.body {
-  background-image: url(../images/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png);
-  /* background-repeat: no-repeat; */
-  background-size: 100%;
-  padding-top: 50px;
+.back-video {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  position: relative;
+  z-index: 5;
 }
 
 .today-weather {
@@ -51,10 +55,12 @@
 }
 
 .site-heading {
-  background-color: rgb(253, 0, 198);
+  /* background-color: rgb(253, 0, 198); */
   border-radius: 50px;
   width: 400px;
   margin: 50px auto;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 .input {
@@ -82,6 +88,8 @@
 }
 
 .button {
+  position: relative;
+  z-index: 5;
   border-radius: 50px;
   /* width: 100px; */
   padding: 20px;
