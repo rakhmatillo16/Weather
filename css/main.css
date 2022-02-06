@@ -63,13 +63,6 @@
   /* border: 1px solid black; */
 }
 
-.weather-item:hover {
-  background-color: rgb(217, 255, 4);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
 .site-heading {
   /* background-color: rgb(253, 0, 198); */
   border-radius: 50px;
@@ -113,16 +106,19 @@
   padding: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
   .back-video {
     display: none;
   }
 
   .mobile-video {
-    display: block;
+    display: flex;
     position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: auto;
+    padding: 500px auto;
   }
 
   .container {
@@ -130,13 +126,14 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 480px;
+    width: 400px;
     height: auto;
     margin: 0 auto;
     padding: 0;
   }
 
   .site-heading {
+    position: relative;
     background-color: rgb(93, 253, 0);
     /* border-radius: 50px; */
     width: 400px;
@@ -148,11 +145,13 @@
 
   .input-btn {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: center;
   }
 
   .input {
+    position: relative;
     display: inline;
     background-color: #f1f2f5;
     border-radius: 25px;
@@ -166,7 +165,6 @@
 
   .button {
     display: inline;
-    position: relative;
     z-index: 5;
     border-radius: 25px;
     /* width: 100px; */
@@ -201,7 +199,7 @@
   }
 
   .weather-list {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -221,13 +219,6 @@
     vertical-align: middle;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     /* border: 1px solid black; */
-  }
-
-  .weather-item:hover {
-    background-color: rgb(217, 255, 4);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   /* CONTINENT  */
