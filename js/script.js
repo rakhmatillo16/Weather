@@ -22,12 +22,12 @@ const renderWeather = function (data) {
           <p>wind: ${data.forecast[0].wind}</p>
           <p>description:  ${data.forecast[0].description}</p></li>
         <li class = "weather-item">
-          <h4>The next day:</h4>
+          <h4>After a day:</h4>
           <p>temperature: ${data.forecast[1].temperature}</p>
           <p>wind: ${data.forecast[1].wind}</p>
           <p>description:  ${data.forecast[1].description}</p></li></li>
         <li class = "weather-item">
-          <h4>Few days later:</h4>
+          <h4>After two days:</h4>
           <p>temperature: ${data.forecast[2].temperature}</p>
           <p>wind: ${data.forecast[2].wind}</p>
           <p>description:  ${data.forecast[2].description}</p></li></li>
@@ -48,13 +48,13 @@ const getRegion = async function (region) {
 
     renderWeather(data);
   } catch (error) {
-    alert(error);
+    console.log(alert(error));
   }
 };
 
 // console.log(getRegion(`fergana`));
 wetherBtn.addEventListener("click", (evt) => {
-  let inputValue = input.value;
+  let inputValue = input.value.trim();
   getRegion(inputValue);
   wether.innerHTML = null;
 });
