@@ -3,6 +3,7 @@
 let wetherBtn = document.querySelector(".button");
 let wether = document.querySelector(".wether");
 let input = document.querySelector(".input");
+let elMain = document.querySelector(".main");
 
 const renderWeather = function (data) {
   const html = `
