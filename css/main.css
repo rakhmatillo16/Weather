@@ -1,6 +1,6 @@
 .body {
   background-image: url(../images/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: 100%;
   padding-top: 50px;
 }
