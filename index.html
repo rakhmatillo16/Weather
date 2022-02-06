@@ -14,6 +14,7 @@
     <title>Weather</title>
   </head>
   <body class="body container">
+    <!-- LAPTOP BACKGROUND -->
     <video
       autoplay="autoplay"
       loop
@@ -23,11 +24,28 @@
     >
       <source type="video/mp4" />
     </video>
-    <header class="container text-center"></header>
+
+    <!-- MOBILE BACKGROUND -->
+
+    <video
+      width="480px"
+      height="844px"
+      autoplay="autoplay"
+      loop
+      muted
+      class="mobile-video"
+      src="./images/pexels-ruvim-miksanskiy-5896379 (2).mp4"
+    >
+      <source type="video/mp4" />
+    </video>
+
+    <!-- VIEW PART -->
+
+    <header class="text-center"></header>
     <main class="main">
       <h1 class="site-heading">Weather in world</h1>
-      <div class="container">
-        <div class="input-btn">
+      <div class="container main-box">
+        <div class="input-btn container">
           <input
             class="input input-group"
             type="text"

@@ -13,7 +13,7 @@ const renderWeather = function (data) {
       <p>temperature: ${data.temperature}</p>
       <p>wind: ${data.wind}</p>
       <p>description:  ${data.description}</p>
-    </div>
+  </div>
 
     <ul class = "weather-list">
         <li class = "weather-item">
