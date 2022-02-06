@@ -6,7 +6,7 @@
 
 .container {
   position: relative;
-  min-width: 1340px;
+  width: 1500px;
   margin: 0 auto;
   padding: 0;
 }
