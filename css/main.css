@@ -4,6 +4,13 @@
   /* height: ; */
 }
 
+.container {
+  position: relative;
+  min-width: 1340px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .main {
   position: relative;
   z-index: 5;
@@ -61,6 +68,7 @@
   margin: 50px auto;
   margin-top: 0;
   padding-top: 20px;
+  text-align: center;
 }
 
 .input {
@@ -94,3 +102,18 @@
   /* width: 100px; */
   padding: 20px;
 }
+
+@media (max-width: 400px) {
+  .container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .back-video {
+    position: absolute;
+    max-width: 100%;
+    /* height: auto; */
+  }
+} ;
