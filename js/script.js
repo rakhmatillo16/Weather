@@ -47,9 +47,8 @@ const getRegion = async function (region) {
 
     console.log(data);
 
-    input.value = null;
-
     renderWeather(data);
+    input.value = null;
   } catch (error) {
     console.log(alert(error));
   }
