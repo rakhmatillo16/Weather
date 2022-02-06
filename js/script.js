@@ -4,7 +4,7 @@ let wetherBtn = document.querySelector(".button");
 let wether = document.querySelector(".wether");
 let input = document.querySelector(".input");
 let elMain = document.querySelector(".main");
-let elForm = document.querySelector(".form");
+// let elForm = document.querySelector(".form");
 
 const renderWeather = function (data) {
   const html = `
@@ -47,6 +47,8 @@ const getRegion = async function (region) {
 
     console.log(data);
 
+    input.value = null;
+
     renderWeather(data);
   } catch (error) {
     console.log(alert(error));
@@ -54,9 +56,8 @@ const getRegion = async function (region) {
 };
 
 // console.log(getRegion(`fergana`));
-elForm.addEventListener("submit", (evt) => {
-  evt.preventDefault();
-  let inputValue = input.value.trim();
+input.addEventListener("change", (evt) => {
+  inputValue = evt.target.value;
   getRegion(inputValue);
   wether.innerHTML = null;
 });
