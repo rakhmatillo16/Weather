@@ -58,7 +58,7 @@
 }
 
 .weather-item {
-  background-color: rgb(231, 129, 223);
+  background-color: rgb(166, 255, 0);
   padding: 30px;
   border-radius: 10px;
   align-items: center;
@@ -213,7 +213,7 @@
   }
 
   .weather-item {
-    background-color: rgb(231, 129, 223);
+    background-color: rgb(166, 255, 0);
     padding: 10px;
     margin: 10px;
     /* height: 150px; */
